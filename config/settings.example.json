@@ -1,0 +1,27 @@
+{
+  "defaultTarget": "staging",
+  "mailinatorApi": "https://api.mailinator.com/api/v2/domains/public/inboxes",
+  "maxConcurrent": 3,
+  "otpTimeout": 120,
+  "otpPollInterval": 2000,
+  "retryLimit": 3,
+  "retryDelay": 5000,
+  "outputDir": "./output",
+  "twoCaptchaKey": "YOUR_2CAPTCHA_KEY",
+  "targets": {
+    "staging": {
+      "publishableKey": "YOUR_STAGING_PUBLISHABLE_KEY",
+      "origin": "https://staging.app.paybox.sh",
+      "apiBase": "https://api.paybox.sh",
+      "moonxBase": "https://api.moonx-dev.com",
+      "tag": "Staging"
+    },
+    "prod": {
+      "publishableKey": "YOUR_PROD_PUBLISHABLE_KEY",
+      "origin": "https://app.paybox.sh",
+      "apiBase": "https://api.paybox.sh",
+      "moonxBase": "https://api.moonx-dev.com",
+      "tag": "Production"
+    }
+  }
+}
